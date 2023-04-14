@@ -65,16 +65,35 @@ itCompanies.forEach( c => {
   console.log(c.toUpperCase());
 });
 // 12. Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
-
-
 // 13. Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
+
+
 // 14. Filter out companies which have more than one 'o' without the filter method
 // 15. Sort the array using sort() method
+
+console.log(itCompanies.sort());
 // 16.Reverse the array using reverse() method
+
+console.log(itCompanies.reverse());
 // 17. Slice out the first 3 companies from the array
+
+itCompanies.splice(0, 3);
+console.log(itCompanies);
 // 18. Slice out the last 3 companies from the array
 // 19. Slice out the middle IT company or companies from the array
 // 20. Remove the first IT company from the array
+
+itCompanies.shift();
+console.log(itCompanies);
 // 21. Remove the middle IT company or companies from the array
+
+itCompanies.splice(2, 1);
+console.log(itCompanies);
 // 22. Remove the last IT company from the array
+
+itCompanies.pop();
+console.log(itCompanies);
 // 23. Remove all IT companies
+
+itCompanies.splice(0, itCompanies.length);
+console.log(itCompanies);
