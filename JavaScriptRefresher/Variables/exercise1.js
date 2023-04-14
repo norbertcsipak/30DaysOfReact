@@ -56,9 +56,17 @@ console.log('Middle company is:', itCompanies[2]);
 console.log('Last company is:', itCompanies[6]);
 // 10. Print out each company
 
-
+for (let i = 0; i < itCompanies.length; i++) {
+  console.log(itCompanies[i]);
+}
 // 11. Change each company name to uppercase one by one and print them out
+
+itCompanies.forEach( c => {
+  console.log(c.toUpperCase());
+});
 // 12. Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
+
+
 // 13. Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
 // 14. Filter out companies which have more than one 'o' without the filter method
 // 15. Sort the array using sort() method
